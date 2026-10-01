@@ -8,6 +8,8 @@ use App\Models\ConteudoModel;
 
 class ConteudoController extends BaseController
 {
+    protected $helpers = ['contato'];
+
     public function index() 
     {
         // Instancia a Model
