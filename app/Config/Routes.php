@@ -11,4 +11,6 @@ $routes->get('/produtos', 'ConteudoController::produtos');
 //Listagem, formulario de edição e atualização
 $routes->get('conteudos', 'ConteudoController::listar');
 $routes->get('conteudos/editar/(:num)', 'ConteudoController::editar/$1');
+
+service('auth')->routes($routes);
 $routes->post('conteudos/atualizar/(:num)', 'ConteudoController::atualizar/$1');
